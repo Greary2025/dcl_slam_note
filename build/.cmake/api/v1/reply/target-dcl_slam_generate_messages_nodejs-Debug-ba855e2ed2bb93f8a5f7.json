@@ -1,0 +1,181 @@
+{
+	"backtrace" : 4,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"include",
+			"generate_messages",
+			"add_dependencies"
+		],
+		"files" : 
+		[
+			"build/DCL-SLAM/cmake/dcl_slam-genmsg.cmake",
+			"/opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake",
+			"DCL-SLAM/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 44,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 307,
+				"parent" : 1
+			},
+			{
+				"file" : 0,
+				"parent" : 2
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 215,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 357,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 360,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 363,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 354,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 222,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 224,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 226,
+				"parent" : 3
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "std_msgs_generate_messages_nodejs::@3876a6b7ee9f384c9ef4"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "nav_msgs_generate_messages_nodejs::@3876a6b7ee9f384c9ef4"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "sensor_msgs_generate_messages_nodejs::@3876a6b7ee9f384c9ef4"
+		},
+		{
+			"backtrace" : 8,
+			"id" : "geometry_msgs_generate_messages_nodejs::@3876a6b7ee9f384c9ef4"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "_dcl_slam_generate_messages_check_deps_loop_info::@3876a6b7ee9f384c9ef4"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "_dcl_slam_generate_messages_check_deps_global_descriptor::@3876a6b7ee9f384c9ef4"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "_dcl_slam_generate_messages_check_deps_neighbor_estimate::@3876a6b7ee9f384c9ef4"
+		}
+	],
+	"id" : "dcl_slam_generate_messages_nodejs::@3876a6b7ee9f384c9ef4",
+	"name" : "dcl_slam_generate_messages_nodejs",
+	"paths" : 
+	{
+		"build" : "DCL-SLAM",
+		"source" : "DCL-SLAM"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 4,
+			"isGenerated" : true,
+			"path" : "build/DCL-SLAM/CMakeFiles/dcl_slam_generate_messages_nodejs",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/DCL-SLAM/CMakeFiles/dcl_slam_generate_messages_nodejs.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/dcl_slam/msg/loop_info.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/dcl_slam/msg/global_descriptor.js.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/devel/share/gennodejs/ros/dcl_slam/msg/neighbor_estimate.js.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

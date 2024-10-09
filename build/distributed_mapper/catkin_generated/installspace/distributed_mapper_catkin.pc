@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: distributed_mapper_catkin
+Description: Description of distributed_mapper_catkin
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -ldistributed_mapper_catkin
+Requires: 

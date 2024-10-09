@@ -1,0 +1,187 @@
+[
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -isystem /usr/src/googletest/googlemock/include -isystem /usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -isystem /usr/src/googletest/googletest/include -isystem /usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -DGTEST_HAS_PTHREAD=1 -std=c++11 -o gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC   -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -std=c++11 -o gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Dgraph_utils_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/graph_utils.dir/src/pairwise_consistency_maximization/graph_utils/graph_utils_functions.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/graph_utils/graph_utils_functions.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/graph_utils/graph_utils_functions.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Dfast_max_clique_finder_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -w -o distributed_mapper/CMakeFiles/fast_max-clique_finder.dir/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findClique.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findClique.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findClique.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Dfast_max_clique_finder_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -w -o distributed_mapper/CMakeFiles/fast_max-clique_finder.dir/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findCliqueHeu.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findCliqueHeu.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findCliqueHeu.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Dfast_max_clique_finder_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -w -o distributed_mapper/CMakeFiles/fast_max-clique_finder.dir/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/utils.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/utils.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/utils.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Dfast_max_clique_finder_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -w -o distributed_mapper/CMakeFiles/fast_max-clique_finder.dir/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/graphIO.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/graphIO.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/graphIO.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Drobot_measurements_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/robot_measurements.dir/src/pairwise_consistency_maximization/robot_measurements/robot_measurements.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/robot_measurements/robot_measurements.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/robot_measurements/robot_measurements.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Drobot_measurements_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/robot_measurements.dir/src/pairwise_consistency_maximization/robot_measurements/interrobot_measurements.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/robot_measurements/interrobot_measurements.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/robot_measurements/interrobot_measurements.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Drobot_measurements_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/robot_measurements.dir/src/pairwise_consistency_maximization/robot_measurements/robot_local_map.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/robot_measurements/robot_local_map.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/robot_measurements/robot_local_map.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Dpairwise_consistency_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/pairwise_consistency.dir/src/pairwise_consistency_maximization/pairwise_consistency/pairwise_consistency.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/pairwise_consistency/pairwise_consistency.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/pairwise_consistency/pairwise_consistency.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Dglobal_map_solver_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/global_map_solver.dir/src/pairwise_consistency_maximization/global_map/global_map.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/global_map/global_map.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/global_map/global_map.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Ddistributed_pcm_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/distributed_pcm.dir/src/pairwise_consistency_maximization/distributed_pcm/distributed_pcm.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/distributed_pcm/distributed_pcm.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/pairwise_consistency_maximization/distributed_pcm/distributed_pcm.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Ddistributed_mapper_catkin_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/distributed_mapper_catkin.dir/src/distributed_mapper/distributed_mapper.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/distributed_mapper.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/distributed_mapper.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Ddistributed_mapper_catkin_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/distributed_mapper_catkin.dir/src/distributed_mapper/evaluation_utils.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/evaluation_utils.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/evaluation_utils.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Ddistributed_mapper_catkin_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/distributed_mapper_catkin.dir/src/distributed_mapper/distributed_mapper_utils.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/distributed_mapper_utils.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/distributed_mapper_utils.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DROS_BUILD_SHARED_LIBS=1 -Ddistributed_mapper_catkin_EXPORTS -I../distributed_mapper/include -I../distributed_mapper/include/pairwise_consistency_maximization -I../distributed_mapper/src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src  -std=c++11 -O3 -DNDEBUG -fPIC   -o distributed_mapper/CMakeFiles/distributed_mapper_catkin.dir/src/distributed_mapper/run_distributed_mapper.cpp.o -c /home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/run_distributed_mapper.cpp",
+  "file": "/home/john/dclslam_ws/src/distributed_mapper/src/distributed_mapper/run_distributed_mapper.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/paramsServer.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/paramsServer.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/paramsServer.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/distributedMappingBasis.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/distributedMappingBasis.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/distributedMappingBasis.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/distributedMapping.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/distributedMapping.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/distributedMapping.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/distributedMappingVisualization.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/distributedMappingVisualization.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/distributedMappingVisualization.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/distributedLoopClosure.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/distributedLoopClosure.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/distributedLoopClosure.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/scanContextDescriptor.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/scanContextDescriptor.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/scanContextDescriptor.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/lidarIrisDescriptor.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/lidarIrisDescriptor.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/lidarIrisDescriptor.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_slam\\\" -Ddcl_slam_EXPORTS -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/pcl-1.10 -isystem /usr/include/eigen3 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/include/opencv4    -O3 -DNDEBUG -fPIC   -std=gnu++14 -o DCL-SLAM/CMakeFiles/dcl_slam.dir/src/m2dpDescriptor.cpp.o -c /home/john/dclslam_ws/src/DCL-SLAM/src/m2dpDescriptor.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-SLAM/src/m2dpDescriptor.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_lio_sam\\\" -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-LIO-SAM/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/opencv4 -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2    -O3 -Wall -g -pthread   -std=gnu++14 -o DCL-LIO-SAM/CMakeFiles/dcl_lio_sam_imageProjection.dir/src/imageProjection.cpp.o -c /home/john/dclslam_ws/src/DCL-LIO-SAM/src/imageProjection.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-LIO-SAM/src/imageProjection.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_lio_sam\\\" -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-LIO-SAM/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/opencv4 -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/local/include/gtsam/3rdparty/metis -isystem /usr/local/include/gtsam/3rdparty/SuiteSparse_config -isystem /usr/local/include/gtsam/3rdparty/CCOLAMD    -O3 -Wall -g -pthread   -fopenmp -std=gnu++14 -o DCL-LIO-SAM/CMakeFiles/dcl_lio_sam_mapOptmization.dir/src/mapOptmization.cpp.o -c /home/john/dclslam_ws/src/DCL-LIO-SAM/src/mapOptmization.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-LIO-SAM/src/mapOptmization.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_lio_sam\\\" -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-LIO-SAM/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/opencv4 -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2    -O3 -Wall -g -pthread   -std=gnu++14 -o DCL-LIO-SAM/CMakeFiles/dcl_lio_sam_featureExtraction.dir/src/featureExtraction.cpp.o -c /home/john/dclslam_ws/src/DCL-LIO-SAM/src/featureExtraction.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-LIO-SAM/src/featureExtraction.cpp"
+},
+
+{
+  "directory": "/home/john/dclslam_ws/src/build",
+  "command": "/usr/bin/g++  -DDISABLE_LIBUSB_1_0 -DDISABLE_PCAP -DDISABLE_PNG -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"dcl_lio_sam\\\" -Dqh_QHpointer -DvtkRenderingContext2D_AUTOINIT=\"1(vtkRenderingContextOpenGL2)\" -DvtkRenderingCore_AUTOINIT=\"3(vtkInteractionStyle,vtkRenderingFreeType,vtkRenderingOpenGL2)\" -Idevel/include -I../DCL-LIO-SAM/include -I../DCL-SLAM/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/glog -I/usr/local/include/distributed_mapper -isystem /usr/include/vtk-7.1 -isystem /usr/include/freetype2 -isystem /usr/include/opencv4 -isystem /usr/include/eigen3 -isystem /usr/include/pcl-1.10 -isystem /usr/include/ni -isystem /usr/include/openni2 -isystem /usr/local/include/gtsam/3rdparty/metis -isystem /usr/local/include/gtsam/3rdparty/SuiteSparse_config -isystem /usr/local/include/gtsam/3rdparty/CCOLAMD    -O3 -Wall -g -pthread   -std=gnu++14 -o DCL-LIO-SAM/CMakeFiles/dcl_lio_sam_imuPreintegration.dir/src/imuPreintegration.cpp.o -c /home/john/dclslam_ws/src/DCL-LIO-SAM/src/imuPreintegration.cpp",
+  "file": "/home/john/dclslam_ws/src/DCL-LIO-SAM/src/imuPreintegration.cpp"
+}
+]

@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/john/dclslam_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/john/dclslam_ws/src/DCL-LIO-SAM/include/**",
+        "/home/john/dclslam_ws/src/DCL-SLAM/include/**",
+        "/home/john/dclslam_ws/src/distributed_mapper/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
