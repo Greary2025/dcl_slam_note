@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: dcl_slam
-Description: Description of dcl_slam
-Version: 1.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib -ldcl_slam
-Requires: std_msgs nav_msgs geometry_msgs sensor_msgs message_runtime message_generation visualization_msgs

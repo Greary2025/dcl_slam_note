@@ -1,8 +1,0 @@
-prefix=/home/john/dclslam_ws/src/build/devel
-
-Name: distributed_mapper_catkin
-Description: Description of distributed_mapper_catkin
-Version: 1.0.0
-Cflags: -I/home/john/dclslam_ws/src/distributed_mapper/include
-Libs: -L${prefix}/lib -ldistributed_mapper_catkin
-Requires: 
