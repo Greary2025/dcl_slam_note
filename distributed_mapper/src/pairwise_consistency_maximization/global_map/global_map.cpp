@@ -9,7 +9,8 @@
 // #define DIR LOG_DIR
 // #else
 // #define DIR std::getenv("HOME") + std::string("/dcl_output")
-#define DIR std::getenv("HOME") + std::string("/dclslam_single_ws/dcl_output")
+// #define DIR "/home/john/dcl_slam_single_ws/dcl_output"
+#define DIR std::getenv("HOME") + std::string("/dcl_slam_single_ws/dcl_output")
 // #endif
 
 namespace global_map {

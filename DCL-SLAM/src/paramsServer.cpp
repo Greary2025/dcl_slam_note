@@ -111,7 +111,9 @@ paramsServer::paramsServer()
 
 	// output directory
 	// nh.param<std::string>(ns + "/save_directory", save_directory_, "/dcl_output");
-	nh.param<std::string>(ns + "/save_directory", save_directory_, "/dclslam_single_ws/dcl_output");
+	nh.param<std::string>(ns + "/save_directory", save_directory_, "/dcl_slam_single_ws/dcl_output");
+	// nh.param<std::string>(ns + "/save_directory", save_directory_, "$(env HOME)/dcl_slam_single_ws/dcl_output");
+	// nh.param<std::string>(ns + "/save_directory", save_directory_, "/home/john/dcl_slam_single_ws/dcl_output");
 }
 
 

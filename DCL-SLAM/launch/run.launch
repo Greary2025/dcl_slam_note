@@ -29,19 +29,27 @@
 
 	<!-- rosbag player node ->> you need to change bag file here!!! -->
 	<!-- SYSU S3E bag file path -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/SYSU_STATUE.bag"/> -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/SYSU_FOOTBALL_FIELD_1.bag"/>  -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_FOOTBALL_FIELD_2.bag"/>  -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_LIVING_QUARTERS.bag"/> -->
-	<arg name="SYSU_bag" value="$(env HOME)/rosbag/dclslam/S3E_Library_1.bag"/>
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_LABORATORY_BUILDING.bag"/> -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_TEACHING_BUILDING.bag"/> -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_ARCHWAY_2.bag"/> -->
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/S3E_Campus_Road_1.bag"/> -->
+	<arg name="SYSU_bag" value="/home/john/rosbag/dcl/v1/Square_1.bag"/>
 
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_GEZHIYUAN_1.bag"/> -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_GEZHIYUAN_2.bag"/> -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_GEZHIYUAN_3.bag"/> -->
-	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag-data/S3E/SYSU_GEZHIYUAN_4.bag"/> -->
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+
+	<!-- <arg name="SYSU_bag" value="/home/john/rosbag/dcl/S3E_Library_1.bag"/> -->
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Playground_2.bag"/> -->
+
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
+
+	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
 
 	<remap from="/Alpha/velodyne_points" to="/a/velodyne_points"/>
 	<remap from="/Bob/velodyne_points" to="/b/velodyne_points"/>

@@ -46,7 +46,7 @@ dcl_slam: {
 
   # output
   # save_directory: "/dcl_output",          # save at $HOME/saveDistributedTrajectoryDirectory
-  save_directory: "/dclslam_single_ws/dcl_output",          # save at $HOME/saveDistributedTrajectoryDirectory
+  # save_directory: "/dcl_slam_single_ws/dcl_output",          # save at $HOME/saveDistributedTrajectoryDirectory
 }
 
 lio_sam:

@@ -22,33 +22,40 @@
 using namespace gtsam;
 
 using symbol_shorthand::X; // Pose3 (x,y,z,r,p,y)
+// 线速度
 using symbol_shorthand::V; // Vel   (xdot,ydot,zdot)
+// 偏差
 using symbol_shorthand::B; // Bias  (ax,ay,az,gx,gy,gz)
 using symbol_shorthand::G; // GPS pose
 
 /*
     * A point cloud type that has 6D pose info ([x,y,z,roll,pitch,yaw] intensity is time stamp)
+    点云类型，包含 6D 姿态信息（[x,y,z,roll,pitch,yaw] 强度 和时间戳）。
     */
 struct PointXYZIRPYT
 {
-    PCL_ADD_POINT4D
+    // union数据类型:四元数(浮点)或结构体(xyz),这里应该采用后者
+    PCL_ADD_POINT4D;
     PCL_ADD_INTENSITY;                  // preferred way of adding a XYZ+padding
     float roll;
     float pitch;
     float yaw;
     double time;
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW   // make sure our new allocators are aligned
+    // 确保在使用 Eigen 库时，能够根据需要进行条件内存对齐。重载了函数 operator new 和 operator delete，以确保在分配和释放内存时，内存块的地址是 16 字节对齐的。
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;   // make sure our new allocators are aligned
 } EIGEN_ALIGN16;                    // enforce SSE padding for correct memory alignment
 
+// register point cloud point struct
 POINT_CLOUD_REGISTER_POINT_STRUCT (PointXYZIRPYT,
                                    (float, x, x) (float, y, y)
                                    (float, z, z) (float, intensity, intensity)
                                    (float, roll, roll) (float, pitch, pitch) (float, yaw, yaw)
                                    (double, time, time))
 
+// typedef 已有名称(int,3.14) 自定义名称(u16,PI)
 typedef PointXYZIRPYT  PointTypePose;
 
-
+// 本程序的类
 class mapOptimization : public ParamServer
 {
 
@@ -157,9 +164,13 @@ public:
 
     mapOptimization()
     {
+        // 参数
         ISAM2Params parameters;
+        // 
         parameters.relinearizeThreshold = 0.1;
+        // 
         parameters.relinearizeSkip = 1;
+        // GTSAM
         isam = new ISAM2(parameters);
 
         pubKeyPoses                 = nh.advertise<sensor_msgs::PointCloud2>("lio_sam/mapping/trajectory", 1);
@@ -1804,6 +1815,7 @@ public:
 };
 
 
+// 本程序主函数
 int main(int argc, char** argv)
 {
     ros::init(argc, argv, "lio_sam");

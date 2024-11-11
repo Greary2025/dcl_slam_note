@@ -84,6 +84,8 @@ lio_sam:
   imuGyrBiasN: 8.1770009351257180e-05 
   imuGravity: 9.79172227
   imuRPYWeight: 0.01
+  # 和lio-sam不同,lio-sam的磁力计和IMU的方向不一样
+  # 该数据集的IMU和激光雷达有旋转
   extrinsicTrans: [0.047665376129920, -0.144120962294238, 0.010086423805523]
   extrinsicRot: [0.999457092910121, -0.031581578016513, 0.009387179146325,
                   0.031588741556450, 0.999500765853014, -6.154009751693067e-04,
@@ -108,7 +110,7 @@ lio_sam:
   rotation_tollerance: 1000                     # radians
 
   # CPU Params
-  numberOfCores: 8                              # number of cores for mapping optimization
+  numberOfCores: 4                              # number of cores for mapping optimization
   mappingProcessInterval: 0.15                  # seconds, regulate mapping frequency
 
   # Surrounding map
