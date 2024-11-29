@@ -27,16 +27,22 @@ find_package(catkin REQUIRED COMPONENTS
   dcl_slam
 )
 
+set(OpenCV_DIR /usr/local/share/opencv4)
+
+find_package(OpenCV REQUIRED)
+
 # find_package(Boost REQUIRED COMPONENTS filesystem system thread)
 find_package(Boost REQUIRED COMPONENTS serialization system filesystem thread date_time timer chrono)
-# find_package(Eigen3 REQUIRED)
+find_package(Eigen3 REQUIRED)
 # find_package(libnabo)
 find_package(libnabo REQUIRED)
 find_package(OpenMP REQUIRED)
-find_package(GTSAM REQUIRED QUIET)
+find_package(GTSAM REQUIRED)
 find_package(PCL REQUIRED)
-find_package(OpenCV REQUIRED QUIET)
+
 find_package(glog REQUIRED)
+
+pkg_check_modules(OPENCV REQUIRED opencv4)
 
 add_message_files(
   DIRECTORY msg
@@ -101,12 +107,12 @@ link_directories(
 # Range Image Projection
 add_executable(${PROJECT_NAME}_imageProjection src/imageProjection.cpp)
 add_dependencies(${PROJECT_NAME}_imageProjection ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_generate_messages_cpp)
-target_link_libraries(${PROJECT_NAME}_imageProjection ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_imageProjection ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} Eigen3::Eigen)
 
 # Feature Association
 add_executable(${PROJECT_NAME}_featureExtraction src/featureExtraction.cpp)
 add_dependencies(${PROJECT_NAME}_featureExtraction ${catkin_EXPORTED_TARGETS} ${PROJECT_NAME}_generate_messages_cpp)
-target_link_libraries(${PROJECT_NAME}_featureExtraction ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES})
+target_link_libraries(${PROJECT_NAME}_featureExtraction ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES} Eigen3::Eigen)
 
 # Mapping Optimization
 add_executable(${PROJECT_NAME}_mapOptmization src/mapOptmization.cpp)
@@ -122,7 +128,7 @@ target_link_libraries(${PROJECT_NAME}_mapOptmization ${catkin_LIBRARIES} ${PCL_L
   boost_date_time
   boost_timer
   boost_chrono
-  # Eigen3::Eigen
+  Eigen3::Eigen
   )
 
 # IMU Preintegration
@@ -135,4 +141,5 @@ target_link_libraries(${PROJECT_NAME}_imuPreintegration ${catkin_LIBRARIES} ${PC
   boost_date_time
   boost_timer
   boost_chrono
+  Eigen3::Eigen
   )

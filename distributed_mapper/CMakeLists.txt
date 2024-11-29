@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   # gtsam
 )
 
+find_package(Eigen3 REQUIRED)
 find_package(GTSAM REQUIRED QUIET)
 
 catkin_package(
@@ -37,15 +38,15 @@ link_directories(
 
 # Graph utils library
 add_library(graph_utils src/pairwise_consistency_maximization/graph_utils/graph_utils_functions.cpp)
-target_link_libraries(graph_utils)
+target_link_libraries(graph_utils Eigen3::Eigen)
 
 # Robot local map library
 add_library(robot_measurements src/pairwise_consistency_maximization/robot_measurements/robot_measurements.cpp src/pairwise_consistency_maximization/robot_measurements/interrobot_measurements.cpp src/pairwise_consistency_maximization/robot_measurements/robot_local_map.cpp)
-target_link_libraries(robot_measurements graph_utils)
+target_link_libraries(robot_measurements graph_utils Eigen3::Eigen)
 
 # Paiwise Consistency computation library
 add_library(pairwise_consistency src/pairwise_consistency_maximization/pairwise_consistency/pairwise_consistency.cpp)
-target_link_libraries(pairwise_consistency robot_measurements)
+target_link_libraries(pairwise_consistency robot_measurements Eigen3::Eigen)
 
 # Maximum Clique Solver
 add_library(fast_max-clique_finder src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findClique.h src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/graphIO.h src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findClique.cpp src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/findCliqueHeu.cpp  src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/utils.cpp  src/pairwise_consistency_maximization/third_parties/fast_max-clique_finder/src/graphIO.cpp
@@ -54,7 +55,7 @@ target_compile_options(fast_max-clique_finder PRIVATE -w)
 
 # Global map solver library
 add_library(global_map_solver src/pairwise_consistency_maximization/global_map/global_map.cpp)
-target_link_libraries(global_map_solver graph_utils pairwise_consistency fast_max-clique_finder)
+target_link_libraries(global_map_solver graph_utils pairwise_consistency fast_max-clique_finder Eigen3::Eigen)
 
 # Distributed PCM library
 add_library(distributed_pcm src/pairwise_consistency_maximization/distributed_pcm/distributed_pcm.cpp)
@@ -62,4 +63,4 @@ target_link_libraries(distributed_pcm global_map_solver)
 
 # Distributed Mapper
 add_library(distributed_mapper src/distributed_mapper/distributed_mapper.cpp src/distributed_mapper/evaluation_utils.cpp include/distributed_mapper/distributed_mapper_utils.h src/distributed_mapper/distributed_mapper_utils.cpp src/distributed_mapper/run_distributed_mapper.cpp)
-target_link_libraries(distributed_mapper graph_utils robot_measurements pairwise_consistency fast_max-clique_finder distributed_pcm global_map_solver)
+target_link_libraries(distributed_mapper graph_utils robot_measurements pairwise_consistency fast_max-clique_finder distributed_pcm global_map_solver Eigen3::Eigen)

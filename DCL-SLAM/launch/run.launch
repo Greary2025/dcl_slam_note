@@ -30,7 +30,7 @@
 	<!-- rosbag player node ->> you need to change bag file here!!! -->
 	<!-- SYSU S3E bag file path -->
 	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/S3E_Campus_Road_1.bag"/> -->
-	<arg name="SYSU_bag" value="/home/john/rosbag/dcl/v1/Square_1.bag"/>
+	<arg name="SYSU_bag" value="/home/john/rosbag/dcl/v1/Square_2.bag"/>
 
 	<!-- <arg name="SYSU_bag" value="$(env HOME)/rosbag/dcl/Campus_Road_1.bag"/> -->
 

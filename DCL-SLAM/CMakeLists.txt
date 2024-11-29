@@ -21,13 +21,15 @@ find_package(catkin REQUIRED COMPONENTS
   visualization_msgs
 )
 
+set(OpenCV_DIR /usr/local/share/opencv4)
 find_package(Boost REQUIRED COMPONENTS filesystem system thread)
+find_package(Eigen3 REQUIRED)
 find_package(libnabo)
 find_package(PCL REQUIRED)
 find_package(OpenMP REQUIRED)
-find_package(OpenCV REQUIRED QUIET)
+find_package(OpenCV REQUIRED)
 find_package(glog REQUIRED)
-find_package(GTSAM REQUIRED QUIET)
+find_package(GTSAM REQUIRED)
 
 if(NOT GTSAM_FOUND)
   message(FATAL_ERROR "GTSAM library not found!")
@@ -111,6 +113,7 @@ target_link_libraries(dcl_slam ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIB
   ${OpenMP_CXX_FLAGS} 
   ${libnabo_LIBRARIES} 
   glog::glog 
+  Eigen3::Eigen
   )
 
 add_executable(${PROJECT_NAME}_loopVisualizationNode src/loopVisualizationNode.cpp)
@@ -127,5 +130,6 @@ target_link_libraries(${PROJECT_NAME}_loopVisualizationNode ${catkin_LIBRARIES} 
   boost_date_time
   boost_timer
   boost_chrono
-  glog::glog
+  glog::glog 
+  Eigen3::Eigen
   )

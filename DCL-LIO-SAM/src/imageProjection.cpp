@@ -93,6 +93,16 @@ public:
     {
         subImu        = nh.subscribe<sensor_msgs::Imu>(imuTopic, 2000, &ImageProjection::imuHandler, this, ros::TransportHints().tcpNoDelay());
         subOdom       = nh.subscribe<nav_msgs::Odometry>(odomTopic+"_incremental", 2000, &ImageProjection::odometryHandler, this, ros::TransportHints().tcpNoDelay());
+        // nh.subscribe<sensor_msgs::PointCloud2>：使用 nh（ros::NodeHandle 对象）创建一个订阅者，
+        // 订阅的消息类型是 sensor_msgs::PointCloud2，这是 ROS 中用于表示点云数据的标准消息类型。
+        // pointCloudTopic：这是订阅的主题名称，类型为 std::string，需要在前面定义。比如 pointCloudTopic 可以是 "/laser_cloud" 或其他包含点云数据的主题。
+        // 5：消息队列大小。在消息接收频率较高的情况下，此参数决定缓存多少条未处理的消息。
+        // 这里设置为 5 表示缓存 5 条未处理的点云消息，如果处理速度低于接收速度，旧消息会被丢弃以腾出空间。
+        // &ImageProjection::cloudHandler：这是处理接收到的消息的回调函数。在接收到点云消息时，ROS 会调用该函数。
+        // 这里的 cloudHandler 是 ImageProjection 类的一个成员函数，负责处理接收到的点云数据。
+        // this：表示回调函数的对象指针。因为 cloudHandler 是 ImageProjection 类的成员函数，所以需要传入当前对象 this。
+        // ros::TransportHints().tcpNoDelay()：这是传输设置。
+        // tcpNoDelay() 用于禁用 TCP 的 Nagle 算法，确保消息低延迟地传输，适用于实时性要求较高的点云数据传输，减少延迟。
         subLaserCloud = nh.subscribe<sensor_msgs::PointCloud2>(pointCloudTopic, 5, &ImageProjection::cloudHandler, this, ros::TransportHints().tcpNoDelay());
 
         pubExtractedCloud = nh.advertise<sensor_msgs::PointCloud2> ("lio_sam/deskew/cloud_deskewed", 1);

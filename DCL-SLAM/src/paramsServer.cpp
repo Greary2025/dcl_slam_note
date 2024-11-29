@@ -43,16 +43,19 @@ paramsServer::paramsServer()
 	nh.param<int>(ns + "/n_scan", n_scan_, 16);
 
 	// CPU Params
+	// nh.param<int>(ns + "/onboard_cpu_cores_num", onboard_cpu_cores_num_, 4);
 	nh.param<int>(ns + "/onboard_cpu_cores_num", onboard_cpu_cores_num_, 4);
-	nh.param<float>(ns + "/loop_closure_process_interval", loop_closure_process_interval_, 0.02);
+	// 闭环检测的时间间隔
+	// nh.param<float>(ns + "/loop_closure_process_interval", loop_closure_process_interval_, 0.2);
+	nh.param<float>(ns + "/loop_closure_process_interval", loop_closure_process_interval_, 0.1);
 	nh.param<float>(ns + "/map_publish_interval", map_publish_interval_, 10.0);
 	nh.param<float>(ns + "/mapping_process_interval", mapping_process_interval_, 0.1);
 
 	// mapping
-	nh.param<bool>(ns + "/global_optmization_enable", global_optmization_enable_, false);
-	nh.param<bool>(ns + "/use_pcm", use_pcm_, false);
+	nh.param<bool>(ns + "/global_optmization_enable", global_optmization_enable_, true);
+	nh.param<bool>(ns + "/use_pcm", use_pcm_, true);
 	nh.param<float>(ns + "/pcm_threshold", pcm_threshold_, 0.75);
-	nh.param<bool>(ns + "/use_between_noise", use_between_noise_, false);
+	nh.param<bool>(ns + "/use_between_noise", use_between_noise_, true);
 	nh.param<int>(ns + "/optmization_maximum_iteration", optmization_maximum_iteration_, 100);
 	nh.param<float>(ns + "/failsafe_wait_time", fail_safe_wait_time_, 1.0);
 	fail_safe_steps_ = fail_safe_wait_time_/mapping_process_interval_;
@@ -60,12 +63,14 @@ paramsServer::paramsServer()
 	nh.param<float>(ns + "/pose_estimate_change_threshold", pose_estimate_change_threshold_, 0.1);
 	nh.param<float>(ns + "/gamma", gamma_, 1.0);
 	nh.param<bool>(ns + "/use_flagged_init", use_flagged_init_, true);
-	nh.param<bool>(ns + "/use_landmarks", use_landmarks_, false);
+	nh.param<bool>(ns + "/use_landmarks", use_landmarks_, true);
 	nh.param<bool>(ns + "/use_heuristics", use_heuristics_, true);
 
 	// downsample
 	nh.param<float>(ns + "/map_leaf_size", map_leaf_size_, 0.4);
+	// nh.param<float>(ns + "/map_leaf_size", map_leaf_size_, 0.2);
 	nh.param<float>(ns + "/descript_leaf_size", descript_leaf_size_, 0.1);
+	// nh.param<float>(ns + "/descript_leaf_size", descript_leaf_size_, 0.05);
 	
 	// loop closure
 	nh.param<bool>(ns + "/intra_robot_loop_closure_enable", intra_robot_loop_closure_enable_, true);
@@ -86,7 +91,7 @@ paramsServer::paramsServer()
 	}
 	else
 	{
-		inter_robot_loop_closure_enable_ = false;
+		inter_robot_loop_closure_enable_ = true;
 		ROS_WARN("Invalid descriptor type: %s, turn off interloop...", descriptor_type_.c_str());
 	}
 	nh.param<int>(ns + "/knn_candidates", knn_candidates_, 10);
